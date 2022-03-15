@@ -1,7 +1,7 @@
 import "./App.css";
 import "./index.css";
 import React from "react";
-import test from "./production.mp4";
+import test from "./production.mov";
 
 const videoLink = test;
 
@@ -15,6 +15,7 @@ export default function App() {
         className="video"
         loop
         playsInline
+        type='video/mp4'
       />
     </div>
   );
