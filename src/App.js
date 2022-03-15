@@ -14,6 +14,7 @@ export default function App() {
         muted 
         className="video"
         loop
+        playsInline
       />
     </div>
   );
