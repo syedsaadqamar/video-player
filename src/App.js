@@ -61,7 +61,6 @@ function Video() {
 
   let prograssValue = 0;
   if (videoRef.current && videoRef.current.duration) {
-    console.log(videoRef.current.duration);
     prograssValue = (currentTime / videoRef.current.duration) * 100;
   }
 
@@ -125,6 +124,8 @@ function Video() {
           className="video"
           onClick={toggleVideoStatus}
           onTimeUpdate={updateTime}
+          webkit-playsinline={'true'}
+          playsInline={true}
         />
         <div className="Video-controls">
           <button className="Video-button" onClick={toggleVideoStatus}>
